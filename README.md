@@ -1,2 +1,5 @@
-# proyecto-1-IA
-Repositorio para el Proyecto 1 de Introducción a la Inteligencia Artificial
+# 1) Definición del problema
+
+# 2) Plan de acción
+
+# 3) Justificación del modelo
