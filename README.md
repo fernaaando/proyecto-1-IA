@@ -20,3 +20,7 @@ Se seleccionó un modelo de Random Forest Regressor para estimar el índice de p
 El desempeño del algoritmo se evaluará mediante validación cruzada K-Fold con k=5. Además, la precisión de las predicciones se medirá utilizando las métricas estadísticas R², MAE y RMSE, las cuales indicarán el margen de error entre la popularidad predicha y la real.
 
 # 3) Justificación del modelo
+La elección del predictor Random Forest se basa principalmente en su alta viabilidad para predecir en base a variables que no tienen la misma naturaleza o que son independientes entre sí, como las que tiene el dataset a trabajar.
+  * Ventajas: Es altamente eficaz en datos no relacionados entre sí y no lineales, sin la necesidad de hacer transformaciones previas a los datos. Además, por cómo funciona el algoritmo, este detectará de forma automática cuáles son las variables más características del dataset para poder predecir.
+  * Limitaciones: La principal desventaja es el alto costo computacional al entrenar el algoritmo con aproximadamente 30 mil datos en múltiples árboles de decisión que se generan al mismo tiempo.
+  * Pertinencia: La elección de este modelo tiene toda la pertinencia, ya que para nuestro problema a resolver, el cual es tratar de predecir la popularidad de una canción, no se hace con variables lineales, sino que, esto se hace usando solo variables y características de la pista que no tienen relación directa entre ellas, escenario para el cual Random Forest es lo mejor.
