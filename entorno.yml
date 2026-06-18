@@ -1,0 +1,10 @@
+name: IA
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - ipykernel
+  - pandas
+  - numpy
+  - seaborn
+prefix: /home/fernando/miniconda3/envs/IA
