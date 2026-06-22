@@ -75,7 +75,7 @@ Posteriormente se analizó la estructura técnica del archivo para identificar s
 Además, se generó un resumen estadístico de las variables numéricas, paso fundamental para identificar las medidas de tendencia central y la dispersión de la información. Así, se revela de forma cuantitativa el comportamiento de las características musicales. Los resultados obtenidos se presentan en la siguiente imagen:
 
 <p align="center">
-  <img src="Imgs/Describe.png" alt="Resumen Estadístico de Variables Numéricas" width="60%">
+  <img src="Imgs/Describe.png" alt="Resumen Estadístico de Variables Numéricas" width="90%">
 </p>
 
 En este caso, la popularidad de las pistas (`track_popularity`) constituye la variable objetivo del modelo predictivo y registra un promedio de 42.47 dentro de una escala de 0 a 100, con una desviación estándar cercana a los 25 puntos. Esta alta dispersión refleja un mercado musical heterogéneo donde conviven canciones sin reproducciones junto a pistas de éxito global. Por su parte, la mediana se sitúa en 45 puntos, un valor superior al promedio que confirma la presencia de un amplio segmento de canciones con un rendimiento muy bajo, las cuales terminan arrastrando la media general hacia abajo.
@@ -85,7 +85,7 @@ Respecto al perfil acústico del conjunto de datos, las estadísticas evidencian
 Además, para complementar estas métricas y observar la distribución real de los datos se construyó un panel de histogramas. Esta representación gráfica facilita la detección de agrupaciones y asimetrías en cada atributo acústico, tal como se expone en la siguiente imagen:
 
 <p align="center">
-  <img src="Imgs/Distribuciones.png" alt="Histogramas de Variables Numéricas" width="60%">
+  <img src="Imgs/Distribuciones.png" alt="Histogramas de Variables Numéricas" width="70%">
 </p>
 
 Al observar el gráfico de la popularidad (`track_popularity`) destaca una frecuencia de canciones con un valor de cero, sumado a una gran concentración de pistas en el sector medio que abarca entre los 40 y 60. Esto evidencia que los grandes éxitos comerciales son muy poco frecuentes dentro de este conjunto de datos.
@@ -105,7 +105,7 @@ Tras evaluar la calidad de la información, se detectó una cantidad bastante re
 Como paso final del análisis exploratorio, se realiza a una matriz de correlación mediante un mapa de calor para evaluar las relaciones lineales entre las variables y entender la estructura del conjunto de datos. La siguiente imagen detalla estas asociaciones:
 
 <p align="center">
-  <img src="Imgs/Corr.png" alt="Matriz de Correlación de Atributos Acústicos" width="60%">
+  <img src="Imgs/Corr.png" alt="Matriz de Correlación de Atributos Acústicos" width="70%">
 </p>
 
 Al desglosar numéricamente estas relaciones, la tabla confirma la ausencia de correlaciones lineales fuertes, ya que ningún valor supera el 0.16. Aunque se observan leves tendencias negativas en la instrumentalidad (-0.157) y la duración (-0.141), además de ligeras influencias positivas en la acústica y la bailabilidad, el impacto aislado de cada métrica sobre la popularidad resulta mínimo. Por otra parte, la matriz permite identificar dinámicas internas interesantes dentro del catálogo, como la fuerte correlación positiva entre la energía (`energy`) y el volumen (`loudness`), así como la evidente asociación negativa entre la acústica (`acousticness`) y la energía, lo cual valida el perfil sonoro moderno y producido que caracteriza a esta data.
@@ -113,7 +113,7 @@ Al desglosar numéricamente estas relaciones, la tabla confirma la ausencia de c
 Además, para profundizar en la relación entre los rasgos acústicos y el éxito o popularidad, se dividió la popularidad en tres niveles (baja, media y alta) y se construyeron diagramas de caja, buscando identificar si las pistas más exitosas poseen un perfil acústico diferenciado respecto a las menos escuchadas. Los resultados se exponen a continuación:
 
 <p align="center">
-  <img src="Imgs/Rasgos.png" alt="Diagramas de Caja: Rasgos Acústicos por Categoría de Éxito" width="70%">
+  <img src="Imgs/Rasgos.png" alt="Diagramas de Caja: Rasgos Acústicos por Categoría de Éxito" width="80%">
 </p>
 
 Para complementar la observación de los diagramas de caja, la siguiente tabla detalla las medianas obtenidas para cada atributo sonoro según el nivel de éxito comercial de las pistas. Estos indicadores permiten cuantificar la tendencia central de los datos y revisar si existen variaciones significativas entre los distintos segmentos de popularidad:
